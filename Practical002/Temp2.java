@@ -6,3 +6,4 @@ public class Temp
 	System.out.println("farhint:"+(cel*9/5)+32);
   }
 }
+

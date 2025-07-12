@@ -1,3 +1,5 @@
+/* Write a java program to calculate the compound intrest.
+*/
 import java.util.*;
 public class CompoundInt {
     public static void main(String[] x) {
