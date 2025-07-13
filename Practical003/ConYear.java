@@ -1,7 +1,7 @@
 /* Convert days into years, weeks, and days
    365 days = 1 year
+   1 weeks=7 days
 */
-
 public class ConYear {
     public static void main(String[] x) {
         int totalDays = Integer.parseInt(x[0]); //404
@@ -11,9 +11,9 @@ public class ConYear {
         int weeks = days / 7; //39/7=5
         int dayss = days % 7;//4
 
-        System.out.println("Total Days: " + totalDays);
-        System.out.println("Years: " + years);
-        System.out.println("Weeks: " + weeks);
-        System.out.println("Days: " + dayss);
+      System.out.println("Total Days: " + totalDays);
+      System.out.println("Years: " + years);
+      System.out.println("Weeks: " + weeks);
+      System.out.println("Days: " + dayss);
     }
 }
