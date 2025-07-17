@@ -11,11 +11,10 @@ public class Axis{
                         (x < 0 && y > 0) ? "Quadrant II" :
                         (x < 0 && y < 0) ? "Quadrant III" :
                         (x > 0 && y < 0) ? "Quadrant IV" :
-                        (x ==0 && y==0)?"Axis":
+                        (x ==|| y==0)?"Axis":
+						(x == && y==0)?"Origin":
 						"Invalid Input";
 				   
 				   System.out.println(result);
-  
   }
-
 }

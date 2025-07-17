@@ -11,11 +11,9 @@ public class Multiple{
 
         System.out.println("Enter the num: ");
         int n = sc.nextInt();
-
-       // System.out.println("Multiple of both 3 and 5: "+((n/3)&&(n/5)));
 		
 		String str=((n%3==0)&&(n%5==0))?"Multiple of both 3 and 5":"Not Multiple of both 3 and 5";
-		 System.out.println(str);
+	    System.out.println(str);
 		
 	
 	

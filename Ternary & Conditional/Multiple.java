@@ -8,9 +8,6 @@ public class Multiple{
         int n = sc.nextInt();
 		
 		String str=((n%5==0)&&(n%11==0))?"Multiple of both 5 and 11":"Not Multiple of both 5 and 11";
-	    System.out.println(str);
-		
-	
-	
+	    System.out.println(str);	
   }
 }
