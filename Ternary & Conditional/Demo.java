@@ -3,13 +3,11 @@ public class Demo{
  public static void main(String x[]){
     Scanner sc=new Scanner(System.in);
 	System.out.println("Enter the three sides of triangle");
-	char ch=sc.next().charAt(0);
-	
-	
-	
-	String result=(ch>='A' && ch<='Z') || (ch>='a' && ch<='z')?"It is alphabetic":
-	              (ch>='0' && ch<='9')?"Number":
-                      "It is symbol";				  
+	int n1=sc.nextInt();
+	int n2=sc.nextInt();
+	int n3=sc.nextInt();
+	int result=Math.max(n1,n2,n3);
+					  
 					 
 					 System.out.println(result);
  }

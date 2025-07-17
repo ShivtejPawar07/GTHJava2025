@@ -12,6 +12,6 @@ public class Maximum2{
 				   n2+" is Maximum";
 				 
 	 System.out.println(result);
-  
+  //int max=Math.max(n1,n2);
   }
 }

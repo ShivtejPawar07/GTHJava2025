@@ -12,9 +12,9 @@ public class AgeCat{
 	
 	 String result=(a>=13 && a<=19) ? "Teen":
 				   (a>=20 && a<=59)?"Adult":
-				   "senior";
+				   (a>=60) ? "Senior" :
+                   "Not categorized";
 				
-				 
 	 System.out.println(result);
   
   }

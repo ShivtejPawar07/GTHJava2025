@@ -16,7 +16,8 @@ public class StudentGrade{
 	 String result=(s>=90 && s<=100) ? "Grade:A":
 				   (s>=80 && s<=89)?"Grade:B":
 				   (s>=70 && s<=79)?"Grade:C":
-				     "Grade:F";
+				   (s<70)? "Grade:F":
+				   "Invalid";
 				 
 	 System.out.println(result);
   

@@ -14,9 +14,8 @@ public class Priority{
 	 int n=sc.nextInt();
 	 
 	 String result=(n%3==0 && n%2==0)?"Even & Div by 3":
-	               (n%3==0)?"Div by 3":
 	               (n%2==0)?"Even":
-				   
+	               (n%3==0)?"Div by 3":
 				   "none";
 				   System.out.println(result);
   

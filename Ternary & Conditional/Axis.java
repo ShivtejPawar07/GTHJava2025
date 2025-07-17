@@ -7,11 +7,12 @@ public class Axis{
 	 int x=sc.nextInt();
 	 int y=sc.nextInt();
 	 
-	 String result=(x>0 && y>0)?"II quadrant":
-	               (x>0 && y<0)?"III quadrant":
-				   (x<0 && y<0)?"IV quadrant":
-				   (x<0 && y>0)?"I quadrant":
-				   "Invalid";
+	  String result =   (x > 0 && y > 0) ? "Quadrant I" :
+                        (x < 0 && y > 0) ? "Quadrant II" :
+                        (x < 0 && y < 0) ? "Quadrant III" :
+                        (x > 0 && y < 0) ? "Quadrant IV" :
+                        (x ==0 && y==0)?"Axis":
+						"Invalid Input";
 				   
 				   System.out.println(result);
   
