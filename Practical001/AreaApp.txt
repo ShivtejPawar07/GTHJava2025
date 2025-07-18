@@ -1,8 +1,0 @@
-public class AreaApp{
-  public static void main(String []x){
-   float l=Float.parseInt(x[0]);
-   float b=Float.parseInt(x[1]);
-   
-  System.out.println("Area of rectangle="+(l*b));
-  }
-}

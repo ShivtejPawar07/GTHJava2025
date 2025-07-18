@@ -1,6 +1,6 @@
 /*  Write a java program to enter length in centimeter and convert into meter and kilometer.
 */
-public class Conversion2{
+public class ConCmKm{
   public static void main(String []x){
       float c=Integer.parseInt(x[0]);
 	  

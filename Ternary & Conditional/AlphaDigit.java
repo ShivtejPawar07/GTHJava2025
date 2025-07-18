@@ -11,6 +11,5 @@ public class AlphaDigit{
 				   ch+"is special char";
 				   
 			System.out.println(result);
-
   }
 }

@@ -8,11 +8,14 @@ public class Minimum3{
 	 int n1=sc.nextInt();
 	 int n2=sc.nextInt();
 	 int n3=sc.nextInt();
-	 String result=(n1<n2 && n1<n3) ? n1+" is Minimum":
+	 String result=(n1<n2 && n1<n3)? n1+" is Minimum":
 				   (n2<n1 && n2<n3)? n2+" is Minimum":
 				     n3+" is minimum";
-				 
+
+                //  Math.min(n1,n2) && Math.min(n1,n3)
+                  //	 Math.min(n2,n1) && Math.min(n2,n3)
+ 					 
 	 System.out.println(result);
-  
+
   }
 }
