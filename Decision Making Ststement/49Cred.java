@@ -24,3 +24,20 @@ Input         	Output
 Explanation
 Since 251 < 750 it is not possible to access CRED Programs
 */
+import java.util.*;
+
+public class CREDCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the credit score");
+        int X = sc.nextInt();  // Credit score
+
+        if (X >= 750) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+
+        sc.close();
+    }
+}

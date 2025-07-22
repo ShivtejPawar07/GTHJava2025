@@ -22,3 +22,32 @@ Test Case 1: The 22 friends can enroll in the course as it has enough seats to a
  
 Test Case 2: The course does not have enough seats to accommodate the 55 friends and the 3838 other students at the same time.
 */
+import java.util.*;
+
+class CourseEnrollment {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of test cases: ");
+        int T = sc.nextInt();  // Number of test cases
+
+        for (int i = 1; i <= T; i++) {
+            System.out.println("\nTest Case " + i + ":");
+
+            System.out.print("Enter number of friends (N): ");
+            int N = sc.nextInt();
+
+            System.out.print("Enter course capacity (M): ");
+            int M = sc.nextInt();
+
+            System.out.print("Enter already registered students (K): ");
+            int K = sc.nextInt();
+
+            if (N + K <= M) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+    }
+}
