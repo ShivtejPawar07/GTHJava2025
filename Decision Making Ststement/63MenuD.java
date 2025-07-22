@@ -7,11 +7,13 @@ import java.util.*;
 class MDS{
   public static void main(String x[]){
     Scanner sc=new Scanner(System.in);
+	int ch;
+	do{
 	System.out.println("1.Check Number is positive , negative or zero");
 	System.out.println("2.Check Number is even or odd");
 	System.out.println("3.To find the max number using 2 numbers");
 	System.out.println("enter your choice");
-	int ch=sc.nextInt();
+	 ch=sc.nextInt();
 	
 	switch(ch){
 	  case 1:System.out.println("Enter a num");
@@ -48,7 +50,7 @@ class MDS{
 	   System.out.println("Invalid Choice");
 	  
 	}
-	
+	}while(ch!=3);
 	
 	
   }
