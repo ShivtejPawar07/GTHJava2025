@@ -11,13 +11,9 @@ import java.util.Scanner;
 public class Commission {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        // Input sales amount
         System.out.print("Enter sales amount: ");
         double sales = sc.nextDouble();
         double commission;
-
-        // Calculate commission based on sales amount
         if (sales < 5000) {
             commission = sales * 0.02;
         } else if (sales <= 10000) {
@@ -25,7 +21,6 @@ public class Commission {
         } else {
             commission = sales * 0.10;
         }
-        // Output commission amount
-        System.out.println("Commission amount: ₹" + commission);
+        System.out.println("Commission amount:" + commission);
     }
 }
