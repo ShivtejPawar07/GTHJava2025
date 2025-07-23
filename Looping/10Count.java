@@ -7,8 +7,8 @@ class Count{
   int n=sc.nextInt();
   int count=0;
   while(n>0){
-	  n /=10;
-   count++;
+	  n /=10;//123/10=12//12/10=1//1/10
+   count++;//1//2//3
   
   }
   System.out.println("count the number of digits:"+count);
