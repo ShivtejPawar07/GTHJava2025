@@ -25,31 +25,30 @@ Test case 22: Both the cab services have the same price.
 Test case 33: The second cab service is cheaper than the first cab service.
 */
 import java.util.*;
-class Cab{
-	public static void main(String x[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the test Cases");
-		int t=sc.nextInt();
-		
-		while(t>0){
-			System.out.println("Enter First Cab price");
-			int xx=sc.nextInt();
-			System.out.println("Enter Second Cab price");
-			int yy=sc.nextInt();
-			
-			if (xx < yy)
+
+class Cab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the number of test cases: ");
+        int t = sc.nextInt();
+
+        while (t-- > 0) {
+            System.out.print("Enter First Cab price: ");
+            int x = sc.nextInt();
+
+            System.out.print("Enter Second Cab price: ");
+            int y = sc.nextInt();
+
+            if (x < y)
                 System.out.println("FIRST");
-            else if (xx > yy)
+            else if (x > y)
                 System.out.println("SECOND");
             else
                 System.out.println("ANY");
-
-            t--; 
-			
-			
-		}
-		
-	}
-	
+        }
+    }
 }
+
+
    

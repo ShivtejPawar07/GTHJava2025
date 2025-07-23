@@ -20,34 +20,41 @@ Output:
 120.00
 */
 import java.util.*;
-class ATM{
-	public static void main(String x[]){
-		 Scanner sc = new Scanner(System.in);
+class ATM
+ {
+    public static void main(String x[])
+	{
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Amount to Withdrawal");
-        int xx=sc.nextInt();
+        int X = sc.nextInt();          // Amount to withdraw
 		System.out.println("Enter Account Balance");
-        double yy = sc.nextDouble();    // Account balance
-		
-		if(xx%5!=0){
-			 System.out.println("Withdrawal amount must be a multiple of 5.");
-            System.out.printf("Current Balance: %.2f\n",yy);
-		}
-		else if(xx+0.50>yy){
-			 System.out.println("Insufficient funds for this transaction.");
-            System.out.printf("Current Balance: %.2f\n",yy);
-
-		}
-		else{
-			  yy =yy - xx - 0.50;
+        double Y = sc.nextDouble();    // Account balance
+        
+		if((X>0 && X<=2000)&&(Y>0 && Y<=2000))
+		{	
+        if (X % 5 == 0)
+		{
+			 Y = Y - X - 0.50;
             System.out.println("Transaction successful.");
-            System.out.printf("Remaining Balance: %.2f\n", yy);
-
-		}
-
-
-
-		
-	}
-	
+            System.out.printf("Remaining Balance: %.2f\n", Y);
+           
+        } 
+		else if (X + 0.50 > Y)
+		{
+            System.out.println("Insufficient funds for this transaction.");
+            System.out.printf("Current Balance: %.2f\n", Y);
+        } 
+		else //X%5!=0
+		{
+			 System.out.println("Withdrawal amount must be a multiple of 5.");
+            System.out.printf("Current Balance: %.2f\n", Y);
+            
+        }
+		}//if
+		else
+		{ 
+	      System.out.println("Invalid input");
+		}	
+    }
 }
 

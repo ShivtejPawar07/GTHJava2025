@@ -23,26 +23,34 @@ Test Case 1: Chef can press the volume up button 4 times to increase the volume 
 Test Case 2: Chef can press the volume down button 2 times to decrease the volume from 12 to 10.
 */
 import java.util.*;
-class VolumeControl{
-	public static void main(String x[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the test Cases");
-		int t=sc.nextInt();
-		
-		while(t>0){
-			System.out.println("Enter Current and Target Volume");
-			int xx=sc.nextInt();
-			int yy=sc.nextInt();
-			
-			if (xx > yy)
-                System.out.println("Chef needs to press button"+(xx-yy)+"times to volume down");
-            else
-                  System.out.println("Chef needs to press button"+(yy-xx)+"times to volume down");
 
-            t--; 
-				
-		}
-		
-	}
-	
+class VolumeControl {
+    public static void main(String x[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of test cases:");
+        int T = sc.nextInt();  // number of test cases
+
+        while (T > 0) {
+            System.out.println("Enter current volume:");
+            int X = sc.nextInt(); 
+
+            System.out.println("Enter target volume:");
+            int Y = sc.nextInt(); 
+
+            if (X >= 1 && X <= 100 && Y >= 1 && Y <= 100) {
+                int presses = Math.abs(X - Y);  // cleaner way to get difference
+
+                if (X > Y)
+                    System.out.println("Chef needs to press button " + presses + " times to volume down");
+                else if (X < Y)
+                    System.out.println("Chef needs to press button " + presses + " times to volume up");
+                else
+                    System.out.println("No button press needed. Volume is already at desired level.");
+            } else {
+                System.out.println("Please enter current and target volume between 1 and 100.");
+            }
+
+            T--;
+        }
+    }
 }
