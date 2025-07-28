@@ -65,3 +65,41 @@ public class MonkeyEating {
         System.out.println("Number of Monkeys left on the tree: " + monkeysLeft);
     }
 }
+/*import java.util.*;
+public class Monkey{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input
+        System.out.print("Enter total number of monkeys (n): ");
+        int n = sc.nextInt();
+
+        System.out.print("Enter number of bananas (m): ");
+        int m = sc.nextInt();
+
+        System.out.print("Enter number of peanuts (p): ");
+        int p = sc.nextInt();
+
+        System.out.print("Enter bananas eaten by one monkey (k): ");
+        int k = sc.nextInt();
+
+        System.out.print("Enter peanuts eaten by one monkey (j): ");
+        int j = sc.nextInt();
+
+        // Monkeys that can eat bananas
+        int monkLeftBanana = m / k;//12/2=6
+
+        // Monkeys that can eat peanuts
+        int monkLeftPeanuts = p / j;//12/3=4
+
+        int totalMonkeysJumped = monkLeftBanana + monkLeftPeanuts; //6+4=10
+		
+		// But monkeys cannot be more than total monkeys available
+       /* if (totalMonkeysJumped > n) { //10>20
+            totalMonkeysJumped = n;
+        }*/
+
+    //    int monkeysLeft = n - totalMonkeysJumped; //
+      //  System.out.println("Number of Monkeys left on the tree : " + monkeysLeft); //10
+  //  }
+//}
