@@ -1,5 +1,106 @@
 class Pattern3{
 	public static void main(String x[]){
+		/*
+Solid Rectangle
+*****
+*****
+*****
+		*/
+		System.out.println("Solid Rectangle");
+		for(int i=1;i<=3;i++){
+			for(int j=1;j<=5;j++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+/*
+Hollow Rectangle
+*****
+*   *
+*****
+*/
+		System.out.println("Hollow Rectangle");
+		for(int i=1;i<=3;i++){
+			for(int j=1;j<=5;j++){
+				if(i==1 || j==1 || i==3||j==5)
+				    System.out.print("*");
+			    else
+					System.out.print(" ");
+					
+			}
+			System.out.println();
+		}
+/*
+Half Rectangle
+*
+**
+***
+****
+*****
+*/
+		System.out.println("Half Rectangle");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=5;j++){
+				if(j<=i)
+				    System.out.print("*");
+			}
+			System.out.println();
+		}
+/*
+Inverted Half Pyramid
+*****
+****
+***
+**
+*
+*/
+		System.out.println("Inverted Half Pyramid");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=5;j++){
+				if(i<=j)
+				    System.out.print("*");
+			}
+			System.out.println();
+		} 
+/*
+Hollow Half Pyramid
+*****
+*  *
+* *
+**
+*
+*/
+		System.out.println("Hollow Half Pyramid");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=5;j++){
+				if(j==1 || i==1  || j==6-i){
+				    System.out.print("*");
+				}
+				else{
+					 System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+/*
+Full Pyramid or Center-Aligned Pyramid.
+    *
+   ***
+  *****
+ *******
+*********
+*/	
+		System.out.println("Full Pyramid or Center-Aligned Pyramid.");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=9;j++){
+				if(j>=6-i && j<=4+i)
+				    System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
 /*
 Full Pyramid
     *
@@ -23,6 +124,7 @@ Full Pyramid
 			}
 			System.out.println();
 		}
+		
 /*
 Hollow Full Pyramid
      *
@@ -156,7 +258,7 @@ Solid Diamond
 *****
 ****
 ***
-**
+**	
 *
 */
         System.out.println("Solid Half Diamnond");
@@ -170,7 +272,20 @@ Solid Diamond
 				}
 			}
 			System.out.println();
-		}		
+		}	
+
+        System.out.println("Hollow Diamond Inscribed in a Rectangle ");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=9;j++){
+				if(j<=6-i || j>=4+i){
+					System.out.print("*");
+				}
+				else{
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}			
 	}
 	
 	
