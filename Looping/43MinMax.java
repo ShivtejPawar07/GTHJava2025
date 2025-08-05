@@ -8,7 +8,7 @@ class SmLarg{
     Scanner sc=new Scanner(System.in);
 	System.out.println("Enter a number");
 	int n=sc.nextInt();
-	int min=9,max=0;
+	int min=n%10,max=0;
 	while(n!=0){//123    
 	 int rem=n%10; //3   //2  //1  
 	  
