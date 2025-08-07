@@ -85,19 +85,16 @@ A       A
 			System.out.printf("\n");
 		}
 
-		System.out.println(" print character pyramid "); 
-            		
+		System.out.println(" print character pyramid ");
+           int cnt=64;		
 	       for(int i=1;i<=5;i++){
-			for(int j=1,cnt=0;j<=9;j++){
+			for(int j=1;j<=9;j++){
 				if(j>=6-i && j<=4+i){
-					if(j==5)
-				    System.out.print(++cnt);
-				   else if(j>=6-i)
-					System.out.print(" ");
-				}
-              else{
-				  System.out.print(" ");
-			  }				
+					if(j<=5)
+				    System.out.print((char)++cnt);
+				   else
+					System.out.print((char)--cnt);
+				}		
 			}
 			System.out.println();
 		}
