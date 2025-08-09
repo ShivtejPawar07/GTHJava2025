@@ -1,7 +1,38 @@
 
 class Pattern4{
-	
 	public static void main(String x[]){
+/*
+ABCDE
+ABCD
+ABC
+AB
+A
+*/		System.out.println(" print character pyramid ");
+		for(char i='A';i<='E';i++){
+			for(char j='A',a='A';j<='E';j++){
+				if(i<=j){
+					System.out.print(a++);
+				}
+			}
+				System.out.println();
+		}
+/*
+ print character pyramid
+A
+AB
+ABC
+ABCD
+ABCDE
+*/
+		System.out.println(" print character pyramid ");
+		for(char i='A';i<='E';i++){
+			for(char j='A';j<='E';j++){
+				if(i>=j){
+					System.out.print(j);
+				}
+			}
+				System.out.println();
+		}
 /*
 Full pyramid
 A
@@ -84,21 +115,51 @@ A       A
 			}
 			System.out.printf("\n");
 		}
-
-		System.out.println(" print character pyramid ");
-           int cnt=64;		
+  /*
+  print Char pyramid
+    A
+   BAB
+  CBABC
+ DCBABCD
+EDCBABCDE
+  */     
+		System.out.println("print Char pyramid ");
+          		
 	       for(int i=1;i<=5;i++){
-			for(int j=1;j<=9;j++){
+			for(int j=1,aa=65+i-1;j<=9;j++){
 				if(j>=6-i && j<=4+i){
-					if(j<=5)
-				    System.out.print((char)++cnt);
-				   else
-					System.out.print((char)--cnt);
-				}		
+					if(j<5)
+				       System.out.print((char)aa--);
+				    else
+						System.out.print((char)aa++);
+				}
+                else{
+					System.out.print(" ");
+				}				
 			}
 			System.out.println();
 		}
-
+ /*
+ print Char pyramid
+A
+BAB
+CBABC
+DCBABCD
+EDCBABCDE
+ */       
+		
+		System.out.println("print Char pyramid ");  		
+	       for(int i=1;i<=5;i++){
+			for(int j=1,aa=65+i-1;j<=9;j++){
+				if(j>=6-i && j<=4+i){
+					if(j<5)
+				       System.out.print((char)aa--);
+				    else
+						System.out.print((char)aa++);
+				}				
+			}
+			System.out.println();
+		}
 		
 	}
 }
