@@ -471,7 +471,7 @@ Right Arrows
 		System.out.println("Right Arrows");
 		for(int i=1;i<=9;i++){
 			for(int j=1;j<=9;j++){
-				if(j==6-i ||j==i-4 || i==5){
+				if(j==6-i ||j==i-4 || i==5 && j%2!=0){
 					System.out.print("*");
 				}
 				else{
@@ -480,6 +480,39 @@ Right Arrows
 			}
 			System.out.println();
 		}
-		
+/*
+Arrows
+    *           *
+     *         *
+      *       *
+       *     *
+*********   ********
+       *     *
+      *       *
+     *         *
+    *           *
+*/
+	/*
+	Solid Heart
+ **   **
+**** ****
+*********
+ *******
+  *****
+   ***
+    *
+	*/	
+		System.out.println("Solid Heart");
+		for(int i=1;i<=7;i++){
+			for(int j=1;j<=9;j++){
+				if((j>=3-i && j<=2+i &&i<=2)||(j>=8-i && j<=7+i && i<=2)||(j>=i-2 && j<=12-i && i>=3)){
+					System.out.print("*");	
+				}
+				else{
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
 	}
 }
