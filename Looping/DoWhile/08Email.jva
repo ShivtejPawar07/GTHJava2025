@@ -1,0 +1,14 @@
+/* **8. Email Address Validator**
+
+**Description:**
+
+* Ask the user for an email address.
+* If email doesn’t contain '@', **continue** to ask again.
+* If user enters "cancel", **break**.
+* Use a do-while loop to validate and accept only proper emails.
+
+---
+*/
+import java.util.*;
+class Email{
+}
