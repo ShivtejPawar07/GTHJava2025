@@ -514,5 +514,46 @@ Arrows
 			}
 			System.out.println();
 		}
+		
+		System.out.println("Hollow Heart");
+		for(int i=1;i<=7;i++){
+			for(int j=1;j<=9;j++){
+				if(((j==3-i || j==2+i )&& i<=2)||((j==8-i || j==7+i)&& i<=2)||((j==i-2 || j==12-i) && i>=3)||(j==5 && i==3)){
+					System.out.print("*");	
+				}
+				else{
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("Hollow Heart with Name");
+
+String name = "Vaisaa"; // The name you want inside
+for (int i = 1; i <= 7; i++) {
+    for (int j = 1; j <= 9; j++) {
+        
+        // Row where the name should appear
+        if (i == 4 && j >= 3 && j < 3 + name.length()) {
+            System.out.print(name.charAt(j - 3));
+        }
+        // Hollow heart border logic
+        else if (((j == 3 - i || j == 2 + i) && i <= 2) ||
+                 ((j == 8 - i || j == 7 + i) && i <= 2) ||
+                 ((j == i - 2 || j == 12 - i) && i >= 3) ||
+                 (j == 5 && i == 3)) {
+            System.out.print("*");
+        } 
+        else {
+            System.out.print(" ");
+        }
+    }
+    System.out.println();
+    }
+	
+
+
+
 	}
 }
