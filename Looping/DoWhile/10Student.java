@@ -12,35 +12,33 @@ class Student {
     public static void main(String x[]) {
         Scanner sc = new Scanner(System.in);
         int totalMarks = 0;
-        int count = 0;
-        String input;
+        int cnt = 0;
+        String mark;
+		
+		do{
+			System.out.println("Enter a marks(or type stop to finish)");
+			mark=sc.nextLine();
+			
+			if(mark.equalsIgnoreCase("stop")){
+				break;
+			}
+			int m=Integer.parseInt(mark);
+			if(m<0){
+				System.out.println("Invalid Input");
+				continue;
+			}
+			totalMarks=totalMarks+m;
+			cnt++;
+			
+		}while(true);
+		
+		if(cnt>0){
+			System.out.println("Average:"+((double)totalMarks/cnt));
+		}
+		else{
+			System.out.println("Invalid Input");
+		}
 
-        do {
-            System.out.println("Enter marks (or type 'stop' to finish):");
-            input = sc.next();
-
-            // Stop condition
-            if (input.equalsIgnoreCase("stop")) {
-                break;
-            }
-
-            int marks = Integer.parseInt(input);
-
-            if (marks < 0) {
-                System.out.println("Invalid marks! Must be positive.");
-                continue;
-            }
-
-            totalMarks += marks;
-            count++;
-
-        } while (true);
-
-        if (count > 0) {
-            double avg = (double) totalMarks / count;
-            System.out.println("Average marks = " + avg);
-        } else {
-            System.out.println("No valid marks entered.");
-        }
+ 
     }
 }
