@@ -357,7 +357,14 @@ Print following Pyramid
 			}
 			System.out.println();
 		}
-		
+/*
+Print pyramid
+0        0
+01      01
+010    010
+0101  0101
+0101001010
+*/	
 		System.out.println("Print pyramid ");
 		for(int i=1; i<=5; i++)
 		{
@@ -384,6 +391,22 @@ Print following Pyramid
 			}	
 			System.out.printf("\n");
 		}
-
+/*
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+*/
+		System.out.println("Half Pyramid");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=i;j++){
+				if((i+j)%2==0)
+				    System.out.print("1");
+				else
+					System.out.print("0");
+			}
+			System.out.println();
+		}
 	}	
 }
