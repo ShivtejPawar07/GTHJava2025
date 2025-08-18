@@ -21,33 +21,21 @@ class Email{
 				break;
 			}
 			int cnt=0;
-			  for (int i = 0; i < s.length(); i++){
+			  for (int i=0; i<s.length(); i++){
 				if(s.charAt(i)=='@'){
 					cnt++;
 				}
 				if(s.charAt(i)==' '){
 					cnt=-1;
 					break;
-				}
-					
+				}	
 			}
 			if (cnt != 1 || s.startsWith("@") || s.endsWith("@")) {
                 System.out.println("Invalid Email! Try again.");
                 continue;
             }
-
             System.out.println("Valid Email");
-
 			
-			
-			/*if(s.contains("@")){
-				System.out.println("Valid Email");
-			}
-			else{
-				System.out.println("InValid Email");
-			}
-			*/
 		}while(true);
-		
 	}
 }

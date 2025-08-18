@@ -342,7 +342,7 @@ Print following Pyramid
 543212345
 */
 		System.out.println(" print pyramid ");
-           int cnt=64;		
+          	
 	       for(int i=1;i<=5;i++){
 			for(int j=1,aa=i;j<=9;j++){
 				if(j>=6-i && j<=4+i){
@@ -358,5 +358,32 @@ Print following Pyramid
 			System.out.println();
 		}
 		
+		System.out.println("Print pyramid ");
+		for(int i=1; i<=5; i++)
+		{
+			boolean flag=true;
+			for(int j=1; j<=10; j++)
+			{
+				if(j<=i)
+					if(j%2==0)
+					System.out.printf("1");
+				    else
+					System.out.printf("0");
+				else if(j>=11-i)
+					if(j>=11-i && flag){
+					System.out.printf("0");
+				    flag=false;
+					}
+				    else{
+					System.out.printf("1");	
+				    flag=true;
+					}
+				else
+					System.out.printf(" ");
+				
+			}	
+			System.out.printf("\n");
+		}
+
 	}	
 }

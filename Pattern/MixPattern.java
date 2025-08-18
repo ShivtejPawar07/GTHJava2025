@@ -213,5 +213,25 @@ Pascale Triangle
             }
             System.out.println();
         }
+/*
+1
+1*2
+1*2*3
+1*2*3*4
+1*2*3*4*5
+*/
+		System.out.println("Mix Pattern");
+		for(int i=1;i<=5;i++){
+			for(int j=1,a=1;j<=9;j++){
+				if(j<=i*2-1 && j%2!=0){
+				System.out.print(a++);
+				}
+				else if(j<=i*2-1 && j%2==0){
+					System.out.print("*"); 
+				}
+				
+			}
+			System.out.println();
+		}
 	}
 }

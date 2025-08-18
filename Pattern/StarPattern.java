@@ -537,25 +537,21 @@ Hollow Heart
 			System.out.println();
 		}
 		
-		System.out.println("Hollow Heart");
+
 /*
+Pattern
 *
 ***
 *****
 *******
-*******
-*****
-***
-*
+*********
 */
-		for(int i=1;i<=8;i=i+2){
-			for(int j=1;j<=7;j++){
-				if((j<=i && i<=5)){
-					System.out.print("*");	
+		System.out.println("Pattern");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=9;j++){
+				if(j<=i*2-1){
+				System.out.print("*");
 				}
-                else if(j<=6-i && i>5){
-					System.out.print("*");	
-				}			
 			}
 			System.out.println();
 		}
