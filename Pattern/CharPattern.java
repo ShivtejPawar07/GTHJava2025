@@ -160,7 +160,30 @@ EDCBABCDE
 			}
 			System.out.println();
 		}
-		
+/*
+print Char pyramid
+A B C D E F
+ A B C D E
+  A B C D
+   A B C
+    A B
+     A
+*/		
+		System.out.println("print Char pyramid "); 
+		for(int i=1;i<=6;i++){
+			boolean flag=true;
+			for(int j=1,q=65;j<=11;j++){
+				if(j>=i && j<=12-i && flag){
+				System.out.print((char)q++);
+				flag=false;
+				}
+				else{
+					System.out.print(" ");
+					flag=true;
+				}	
+			}
+			System.out.println();
+		}
 		
 		
 	}

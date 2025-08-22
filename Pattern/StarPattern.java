@@ -555,5 +555,34 @@ Pattern
 			}
 			System.out.println();
 		}
+/*
+Pattern
+* * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+* * * * * *
+*/		
+		System.out.println("Pattern");
+		for(int i=1;i<=11;i++){
+			boolean flag=true;
+			for(int j=1;j<=11;j++){
+				if((j>=i && j<=12-i && flag)||(j>=12-i && j<=i && flag)){
+				System.out.print("*");
+				flag=false;
+				}
+				else{
+					System.out.print(" ");
+					flag=true;
+				}	
+			}
+			System.out.println();
+		}
 	}
 }

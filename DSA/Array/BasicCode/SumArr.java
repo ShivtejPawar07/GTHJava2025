@@ -1,4 +1,4 @@
-/*Sum of array elemnt*/
+/*Sum of array element*/
 import java.util.*;
 class Sum{
 	public static void main(String x[]){

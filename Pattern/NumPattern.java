@@ -408,5 +408,56 @@ Print pyramid
 			}
 			System.out.println();
 		}
+/*
+Num Pattern
+1 2 3 4 5 6
+ 2 3 4 5 6
+  3 4 5 6
+   4 5 6
+    5 6
+     6
+    5 6
+   4 5 6
+  3 4 5 6
+ 2 3 4 5 6
+1 2 3 4 5 6
+*/	    System.out.println("Num Pattern");
+		for(int i=1;i<=11;i++){
+			boolean flag=true;
+			for(int j=1,a=i,b=12-i;j<=11;j++){
+				if(j>=i && j<=12-i && flag){
+				System.out.print(a++);
+				flag=false;
+				}
+				else if(j>=12-i && j<=i && flag){
+				System.out.print(b++);
+				flag=false;
+				}
+				else{
+					System.out.print(" ");
+					flag=true;
+				}	
+			}
+			System.out.println();
+		}
+/*
+Num Pattern
+11111
+11011
+10101
+11011
+11111
+*/
+		System.out.println("Num Pattern");
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=5;j++){
+				if((i==2 && j==3)||(j==2 ||j==4)&& i==3||(i==4 && j==3))
+					System.out.print("0");
+			    else
+					System.out.print("1");
+				
+			}
+			System.out.println();
+		}
 	}	
 }
