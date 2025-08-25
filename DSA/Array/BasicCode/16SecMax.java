@@ -28,8 +28,6 @@ class Demo{
 		if(smax!=Integer.MIN_VALUE)
 			System.out.println("Second Max="+smax);
 		else
-			System.out.println("There is no Seocnd Max");
-		
-		
+			System.out.println("There is no Seocnd Max");	
 	}
 }

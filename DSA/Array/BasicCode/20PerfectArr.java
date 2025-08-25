@@ -1,25 +1,28 @@
-/*Q13. Write a java program to copy one array to another array.
-*/
-import java.util.*;
-class Copy{
+/*Q20. Write a java program to find perfect number of a array.*/
+import  java.util.*;
+class Arr{
 	public static void main(String x[]){
 		Scanner sc=new Scanner(System.in);
 		int a[]=new int[5];
-		int b[]=new int[5];
 		System.out.println("Enter Array Elemnt");
 		for(int i=0;i<a.length;i++){
 			a[i]=sc.nextInt();
 		}
-		System.out.println("Display 1st Array Elemnt");
+		System.out.println("Display Array Elemnt");
 		for(int i=0;i<a.length;i++){
 			System.out.printf("a[%d]=%d\n",i,a[i]);
 		}
 		for(int i=0;i<a.length;i++){
-			b[i]=a[i];
+			int n=a[i],sum=0;
+			for(int j=1;j<=n/2;j++){
+				if(n%j==0){
+					sum=sum+j;
+				}
+		    }
+			if(sum==a[i]){
+			System.out.print(a[i]+" ");
 		}
-		System.out.println("Display 2nd Array Elemnt");
-		for(int i=0;i<b.length;i++){
-			System.out.printf("b[%d]=%d\n",i,a[i]);
+		
 		}
 	}
 }
