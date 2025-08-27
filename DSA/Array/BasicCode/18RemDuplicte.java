@@ -12,15 +12,19 @@ class Arr{
 		for(int i=0;i<a.length;i++){
 			System.out.printf("a[%d]=%d\n",i,a[i]);
 		}
-		boolean flag=false;
-		for(int i=0;i<a.length;i++){
-			for(int j=i+1;j<a.length;j++){
-				  if((a[i]!=a[j]))
-				  { flag=true;
-					System.out.print(a[i]+" ");
+		
+		for(int i=0;i<a.length;i++){//10 20 10 30 30
+			boolean flag=false;
+			for(int j=0;j<i;j++){
+				  if((a[i]==a[j]))// 
+				  { 
+			        flag=true;
 				    break;
 				  }
 			}
+			if (!flag) {
+                System.out.print(a[i] + " ");
+            }
 		}
 	}
 }

@@ -15,8 +15,8 @@ class PaliArr{
 			System.out.println(a[i]+" ");
 		}
 		boolean flag=true;
-		for(int i=0;i<n/2;i++){
-			if(a[i]!=a[n-1-i]){
+		for(int i=0;i<n/2;i++){//1 2 3 2 1 
+			if(a[i]!=a[n-1-i]){//1       1
 				flag=false;
 			}
 		}

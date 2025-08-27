@@ -20,11 +20,11 @@ class Arr{
 		for(int i=0;i<b.length;i++){
 			System.out.printf(b[i]+" ");
 		}
-		Arrays.sort(a);
-		Arrays.sort(b);
+		Arrays.sort(a);//1 2 3 4 5
+		Arrays.sort(b);//2 3 4 6 7
 		System.out.println("\nInsersections");
 		int i=0,j=0;
-		for(int k=0;k<(a.length+b.length)-1;k++)
+		for(int k=0;k<(a.length+b.length)-1;k++)//
 		{ 
 			if(a[i]!=b[j])
 			{	
