@@ -1,7 +1,7 @@
 /*Q21. Write a java program to find duck number of a array.
 .*/
 
-import  java.util.*;
+import java.util.*;
 class Arr{
 	public static void main(String x[]){
 		Scanner sc=new Scanner(System.in);

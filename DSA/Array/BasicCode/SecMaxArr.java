@@ -17,27 +17,24 @@ class Demo{
 		for(int i=0;i<n;i++){
 			System.out.printf("a[%d]=%d\n",i,a[i]);
 		}
-		//10 20 30 40
-		int max=a[0];
-		int smax=Integer.MIN_VALUE;
+		//10 20 40 40
+		int max=Integer.MIN_VALUE;
+		int smax=0;
 		for(int i=0;i<n;i++){
-			if(a[i]>max){//10>10 //20>10 //30>20 //40>30
+			if(a[i]>smax||a[i]>max){//10>10 //20>10 //30>20 //40>30
 				smax=max;        //smax=10  20   //30
-				max=a[i];		//max=20  //30   //40
+				max=a[i];		//max=100 //30   //40
 			}
-			else if(a[i]>smax && a[i]!=max){//used by duplicate
+			/*else if(a[i]>smax && a[i]!=max){//used by duplicate
 				smax=a[i];
 			}
 			else{
-			}
+			}*/
 		}
-		  if(smax!=Integer.MIN_VALUE)
-	      {
+		  
 	       System.out.println("Second Max value is  "+smax);
-	      }
-	      else{
-		    System.out.println("There is no seconod max value");
-	      }
+	       System.out.println("Max value is  "+max);
+	     
 
 	}
 }

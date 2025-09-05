@@ -8,6 +8,37 @@ k=3   0 1 2  =3
 	  4 5 6  =15
 	  ans min=3*/
 import java.util.*;
+class MinSum{
+	public static void main(String x[]){
+		Scanner sc=new Scanner(System.in);
+		int a[]={0,1,2,3,4,5,6};
+		
+		System.out.println("Enter a k Value");
+		int k=sc.nextInt();
+		int sum=0;
+		int min=Integer.MAX_VALUE;
+		for(int i=0;i<k;i++){//
+			sum+=a[i];
+		}
+		min=sum;
+		for(int i=k;i<a.length;i++){
+			sum+=a[i]-a[i-k];//
+			if(sum<min)
+				min=sum;
+		}
+		System.out.println("Minimum sum="+min);
+		
+	}
+}
+
+
+
+
+
+
+
+
+/*import java.util.*;
 class MaxSumSubArray{
 	public static void main(String x[]){
 		Scanner sc=new Scanner(System.in);
@@ -39,3 +70,4 @@ class MaxSumSubArray{
 		System.out.println("Minimum Sum="+min);
 	}
 }
+*/

@@ -2,7 +2,7 @@
 */
 import java.util.*;
 class Union
-{
+{   
 	public static void main(String x[])
 	{
 		Scanner sc=new Scanner(System.in);
