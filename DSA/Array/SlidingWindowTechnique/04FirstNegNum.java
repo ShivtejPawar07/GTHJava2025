@@ -7,10 +7,10 @@ class array{
 		Scanner sc=new Scanner(System.in);
 		int a[]={12,-1, -7, 8, -15, 30, 16, 28};
 		int k=3;
-  
-        for (int i=0;i<=a.length-k;i++){
+        
+        for(int i=0;i<=a.length-k;i++){
 			boolean flag=false;
-            for (int j=i;j<i+k;j++){
+            for(int j=i;j<i+k;j++){
 				if(a[j]<0)
 				{
 					System.out.println("First negative in "+(i+1) +" window"+a[j]);
@@ -19,9 +19,8 @@ class array{
 				}
             }
 			if(flag==false)
-				 System.out.println("Not found");
+				System.out.println("Not found");
 			System.out.println();
-		}
-		 
+		} 
 	}
 }

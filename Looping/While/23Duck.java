@@ -10,6 +10,7 @@ class Duck{
 		System.out.println("Enter a number");
 		int n=sc.nextInt();//1208
 		boolean flag=false;
+	
 		while(n!=0){
 			int rem=n%10;
 			    if(rem==0){

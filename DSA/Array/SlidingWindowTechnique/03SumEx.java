@@ -22,6 +22,5 @@ class SumArr
 		   if(sum==target)
 		    System.out.printf("Window [a[%d],a[%d]] = %d\n", i-k+1, i, sum);
 	   }
-	 
    }
 }
