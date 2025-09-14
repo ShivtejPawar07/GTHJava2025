@@ -16,6 +16,7 @@ class Arr{
 		for(int i=0;i<a.length;i++){//10 20 10 30 30
 			boolean flag=false;
 			for(int j=0;j<i;j++){
+				         //
 				  if((a[i]==a[j]))// 
 				  { 
 			        flag=true;

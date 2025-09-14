@@ -12,7 +12,7 @@ Half Pyramid
         System.out.println("Half Pyramid");
 		for(int i=1;i<=5;i++){
 			for(int j=1,a=1;j<=5;j++){
-				if(j<=i)
+				if(j<=i) 
 				    System.out.print(a++);
 			}
 			System.out.println();
@@ -193,15 +193,15 @@ Full pyramid
 */
 		System.out.println("Full pyramid");
            
-	       for(int i=1;i<=5;i++){
-			   int c=0;
+	        for(int i=1;i<=5;i++){
+			int cntt=0;
 			for(int j=1;j<=9;j++){
-				if(j>=6-i && j<=4+i){
-					if(j<=5)
-				    System.out.print(++c);
-				else
-					System.out.print(--c);
-				}		
+				if(j<=i*2-1){
+					if(j<=i)
+						System.out.print(++cntt);
+				    else
+						System.out.print(--cntt);
+				}	
 			}
 			System.out.println();
 		}
@@ -225,7 +225,6 @@ Triangle with Numbers
 					System.out.print(" ");
 					flag=true;
 				}
-				
 			}
 			System.out.println();
 		}
@@ -248,7 +247,7 @@ Different Half Diamonds
 				}
 				else if((j<=8-i && i>=5))
 				{
-					System.out.print(8-i+2);
+					System.out.print(8-i+2);//8-7+2==3
 				}
 				else{
 					System.out.print(" ");

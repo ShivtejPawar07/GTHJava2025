@@ -27,7 +27,5 @@ public class Seclarge {
             Arrays.sort(colArr); // sort column
             System.out.println("Column " + (col + 1) + " → " + colArr[1]); // 2nd largest (middle element)
         }
-
-        sc.close();
     }
 }

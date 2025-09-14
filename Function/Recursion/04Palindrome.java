@@ -1,24 +1,23 @@
-/*Q4Write a program to check whether a given number is a palindrome using recursion.
-*/
+/*/*Q4Write a program to check whether a given number is a palindrome using recursion. */*/
 import java.util.*;
-class Power{
-	public static void main(String x[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter number");
-		int n=sc.nextInt();
-		boolean r=palindrome(b,i);
-		if(r)
-			System.out.println("Palindrome");
-		else	
-			System.out.println("Not Palindrome");
-	}
-	public static int palindrome(int n){
-	int p=1;
-		if(n!=0){
-			int rem=n%10;
-			rev=rev*10+rem;
-			n=n/10
-		}
-		return rev+palindrome(n);
-	}
+class PalindromeRec {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int n=sc.nextInt();
+
+        if (isPalindrome(n,0,n))
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not Palindrome");
+    }
+    // Recursive function
+    public static boolean isPalindrome(int n, int rev, int original) {
+        if (n==0) {
+            return rev==original; // check if reversed equals original
+        }
+        int rem = n % 10;
+        rev = rev * 10 + rem;
+        return isPalindrome(n / 10, rev, original);
+    }
 }

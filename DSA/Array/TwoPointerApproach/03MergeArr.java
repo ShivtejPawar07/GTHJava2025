@@ -43,7 +43,7 @@ class MergeSorted
 		 }
 		 
 		 System.out.println("Merged array");
-		 for( i=0;i<c.length;i++)
+		 for(i=0;i<c.length;i++)
 		         System.out.println(c[i]+" ");	
     }
 }

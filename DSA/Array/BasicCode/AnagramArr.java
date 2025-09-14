@@ -1,4 +1,5 @@
-
+/*anagram=Two numbers are called anagrams of each other if they contain the
+ same digits with the same frequency, but possibly in a different order.*/
 import java.util.*;
 class Anagram{
 	public static void main(String x[]){

@@ -242,7 +242,9 @@ Pascale Triangle
 #6#6#6
 */		
 		for(int i=1;i<=6;i++){
-			 int repeat = (i <= 2) ? 1 : (i <= 4) ? 2 : 3;
+			 int repeat = (i <= 2) ? 1 : 
+			              (i <= 4) ? 2 : 
+						             3;
 			for(int j=1;j<=repeat;j++){
 					System.out.print("#"+i);
 			 }
