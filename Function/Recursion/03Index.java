@@ -10,7 +10,6 @@ class Power{
 		System.out.println("Pow="+r);
 	}
 	public static int pow(int b,int i){
-	int p=1;
 		if(i==0)
 		   return 1;
 		else

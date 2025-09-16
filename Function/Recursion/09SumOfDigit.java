@@ -1,3 +1,5 @@
+/*Q9Write a program to calculate the sum of digits of a given number using recursion.
+*/
 import java.util.*;
 class Demo{
 	public static void main(String x[]){

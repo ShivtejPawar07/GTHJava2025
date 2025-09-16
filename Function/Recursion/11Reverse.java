@@ -1,6 +1,7 @@
-/*/*Q4Write a program to check whether a given number is a palindrome using recursion. */*/
+/*11Write a program to reverse a given number using recursion.
+*/
 import java.util.*;
-class PalindromeRec {
+class ReverseRec {
     // Recursive function to reverse a number
     public static int reverse(int n, int rev) {
         if (n == 0) {
@@ -15,11 +16,7 @@ class PalindromeRec {
         int n = sc.nextInt();
 
         int rev = reverse(n, 0);//121,0
-
-        if (n == rev)
-            System.out.println("Palindrome");
-        else
-            System.out.println("Not Palindrome");
+		
+            System.out.println("Reverse="+rev);
     }
 }
-
