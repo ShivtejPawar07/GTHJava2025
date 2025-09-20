@@ -1,5 +1,6 @@
+/*Write a program to print numbers from 1 to n using recursion.
+*/
 import java.util.*;
-
 class Num {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

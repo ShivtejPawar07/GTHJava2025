@@ -13,7 +13,7 @@ class Sum{
 		if(n==0){
 			return 0;
 		}
-		if (n % 2 == 0) {
+		if(n % 2 == 0) {
             return n + sum(n - 1);  // add even number
         } else {
             return sum(n - 1);  // skip odd number

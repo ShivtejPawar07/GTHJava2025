@@ -10,7 +10,6 @@ class Demo{
 		System.out.println("CountOfDigit="+r);
 	}
 	public static int count(int n){
-
 		if(n==0){
 			return 0;
 		}

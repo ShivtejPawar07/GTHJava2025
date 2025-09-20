@@ -27,7 +27,5 @@ class Arr{
 			}
 			if(!flag)
 				System.out.println("No Triplets with Zero Sum");
-		   
-
 	}
 }

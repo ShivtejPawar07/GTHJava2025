@@ -10,7 +10,7 @@ class SApp{
 			System.out.print(i+" ");
 		}
 		*/
-		System.out.println("ENter the Number Series");
+		System.out.println("ENter the limit of  Series");
 		int n=sc.nextInt();
 		series(n);//function call
 	}
