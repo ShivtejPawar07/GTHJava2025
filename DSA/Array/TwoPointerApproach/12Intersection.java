@@ -22,20 +22,21 @@ class Arr{
 		}
 		Arrays.sort(a);//1 2 3 4 5
 		Arrays.sort(b);//2 3 4 6 7
-		System.out.println("\nInsersections");
-		int i=0,j=0;
-		for(int k=0;k<(a.length+b.length)-1;k++)//
-		{ 
-			if(a[i]!=b[j])
-			{	
-		       i++;
+		System.out.println("\nIntersection");
+		i=0;
+		j=0;
+		while(i<n1 && j<n2){
+			if(a[i]<b[j]){
+				i++;
 			}
-			else
-			{
+			else if(a[i]>b[j]){
+				j++;
+			}
+			else{
 				System.out.print(a[i]+" ");
-			    j++;
-			}			
-              				
-		}	
+				i++;
+				j++;
+			}
+		}
 	}
 }

@@ -1,68 +1,73 @@
 import java.util.*;
-
-class UnionIntersection {
-    public static void main(String xx[]) {
-        Scanner sc = new Scanner(System.in);
-
-        // Input first array
-        System.out.println("Enter how many elements in array 1:");
-        int n1 = sc.nextInt();
-        int a[] = new int[n1];
-        System.out.println("Enter array elements of array a:");
-        for (int i = 0; i < a.length; i++)
-            a[i] = sc.nextInt();
-
-        // Input second array
-        System.out.println("Enter how many elements in array 2:");
-        int n2 = sc.nextInt();
-        int b[] = new int[n2];
-        System.out.println("Enter array elements of array b:");
-        for (int i = 0; i < b.length; i++)
-            b[i] = sc.nextInt();
-
-        // Sort both arrays
-        Arrays.sort(a);
-        Arrays.sort(b);
-
-        // ---------------- UNION ----------------
-        System.out.println("Union of arrays:");
-        int i = 0, j = 0;
-        while (i < a.length && j < b.length) {
-            if (a[i] < b[j]) {
-                System.out.print(a[i] + " ");
-                i++;
-            } else if (b[j] < a[i]) {
-                System.out.print(b[j] + " ");
-                j++;
-            } else { // equal
-                System.out.print(a[i] + " ");
-                i++;
-                j++;
-            }
-        }
-        // Print remaining elements
-        while (i < a.length) {
-            System.out.print(a[i] + " ");
-            i++;
-        }
-        while (j < b.length) {
-            System.out.print(b[j] + " ");
-            j++;
-        }
-
-        // ---------------- INTERSECTION ----------------
-        System.out.println("\nIntersection of arrays:");
-        i = 0; j = 0;
-        while (i < a.length && j < b.length) {
-            if (a[i] < b[j]) {
-                i++;
-            } else if (b[j] < a[i]) {
-                j++;
-            } else { // equal
-                System.out.print(a[i] + " ");
-                i++;
-                j++;
-            }
-        }
-    }
+class UIApp{
+	public static void main(String x[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many number in an 1st array");
+		int n1=sc.nextInt();
+		int[] a=new int[n1];
+		System.out.println("Enter 1st array Elemnt");
+		for(int i=0;i<n1;i++)
+			a[i]=sc.nextInt();
+		
+		System.out.println("Dispaly 1st array Elemnt");
+		for(int i=0;i<n1;i++)
+			System.out.print(a[i]+" ");
+		
+		System.out.println("\nHow many number in an 2nd array");
+		int n2=sc.nextInt();
+		int[] b=new int[n2];
+		System.out.println("Enter 2nd array Elemnt");
+		for(int i=0;i<n2;i++)
+			b[i]=sc.nextInt();
+		
+		System.out.println("Display 2nd array Elemnt");
+		for(int i=0;i<n2;i++)
+			System.out.print(b[i]+" ");
+	
+		Arrays.sort(a);
+		Arrays.sort(b);
+		
+		System.out.println("\nUnion of Array");
+		int i=0,j=0;
+		while(i<n1 && j<n2){
+			if(a[i]<b[j]){
+				System.out.print(a[i]+" ");
+				i++;
+			}
+			else if(b[j]<a[i]){
+				System.out.print(b[j]+" ");
+				j++;
+			}
+			else{
+				System.out.print(a[i]+" ");
+				i++;
+				j++;
+			}	
+		}
+		while(i<n1){
+			System.out.print(a[i]+" ");
+			i++;
+		}
+		while(j<n2){
+			System.out.print(b[j]+" ");
+			j++;
+		}
+		System.out.println("\nIntersection");
+		i=0;
+		j=0;
+		while(i<n1 && j<n2){
+			if(a[i]<b[j]){
+				i++;
+			}
+			else if(a[i]>b[j]){
+				j++;
+			}
+			else{
+				System.out.print(a[i]+" ");
+				i++;
+				j++;
+			}
+		}
+	}
+	
 }

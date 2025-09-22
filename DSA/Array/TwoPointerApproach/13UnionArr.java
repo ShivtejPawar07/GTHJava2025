@@ -25,27 +25,30 @@ class Union
 	     Arrays.sort(a);//1 2 3 4 5
 		 Arrays.sort(b);//3 4 5 6 7
                                            
-		System.out.println("union");
+		System.out.println("\nUnion of Array");
 		int i=0,j=0;
-		for(int k=0;k<(a.length+b.length);k++)
-		{ 
-             
-            if (i < a.length &&  a[i] < b[j])
-				{
-                System.out.print(a[i] + " ");
-                i++;
-                } 
-			else if (j < b.length && (i >= a.length || a[i]>b[j]))
-				{
-                System.out.print(b[j] + " ");
-                j++;
-               } 
-			else if (i < a.length && j < b.length && a[i] == b[j])
-				{
-                System.out.print(a[i] + " ");
-                i++;
-                j++;
-		       }
-		}		
+		while(i<n1 && j<n2){
+			if(a[i]<b[j]){
+				System.out.print(a[i]+" ");
+				i++;
+			}
+			else if(b[j]<a[i]){
+				System.out.print(b[j]+" ");
+				j++;
+			}
+			else{
+				System.out.print(a[i]+" ");
+				i++;
+				j++;
+			}	
+		}
+		while(i<n1){
+			System.out.print(a[i]+" ");
+			i++;
+		}
+		while(j<n2){
+			System.out.print(b[j]+" ");
+			j++;
+		}	
 	}
 }

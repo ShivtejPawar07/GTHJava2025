@@ -24,11 +24,15 @@ class Sum {
 
         while (i <= j) {
             if (a[i] > a[j]) {
-                if (a[i] > max) max = a[i];
-                if (a[j] < min) min = a[j];
+                if (a[i] > max) 
+					max = a[i];
+                if (a[j] < min) 
+					min = a[j];
             } else {
-                if (a[j] > max) max = a[j];
-                if (a[i] < min) min = a[i];
+                if (a[j] > max)
+					max = a[j];
+                if (a[i] < min) 
+					min = a[i];
             }
             i++;
             j--;
