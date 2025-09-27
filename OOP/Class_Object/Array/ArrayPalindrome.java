@@ -6,12 +6,9 @@ boolean isPalindrome()
 Logic: Compare arr[i] with arr[n-i-1].*/
 import java.util.*;
 class Array{
-	void inputArray(int arr[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter array elemnt");
-		for(int i=0;i<arr.length;i++){
-			arr[i]=sc.nextInt();
-		}
+	int arr[];
+	void setArray(int arr[]){
+		this.arr=arr;
 	}
 	boolean isPalindrome(int arr[]){
 		for(int i=0;i<arr.length/2;i++){
@@ -27,15 +24,19 @@ class ArrayPalindrome{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("How many elemnt in an array");
 		int n=sc.nextInt();
-		
 		int[]arr=new int[n];
+		System.out.println("Enter array elemnt");
+		for(int i=0;i<arr.length;i++){
+			arr[i]=sc.nextInt();
+		}
+
 		
 		Array am=new Array();
-		am.inputArray(arr);
+		am.setArray(arr);
 		if(am.isPalindrome(arr))
 			System.out.println("Array is Palindrome");
 		else
-			System.out.println("Array is Palindrome");
+			System.out.println("Array is Not Palindrome");
 			
 	}
 }

@@ -23,7 +23,7 @@ class Union
 			b[i]=sc.nextInt();		
 
 	     Arrays.sort(a);//1 2 3 4 5
-		 Arrays.sort(b);//3 4 5 6 7
+		 Arrays.sort(b);//1 1 5 6 7
                                            
 		System.out.println("\nUnion of Array");
 		int i=0,j=0;

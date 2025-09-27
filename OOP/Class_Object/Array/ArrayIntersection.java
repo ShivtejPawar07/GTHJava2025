@@ -35,7 +35,6 @@ class Array{
 				j++;
 			}
 		}
-		
 	}
 }
 class ArrayIntersection{

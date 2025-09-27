@@ -15,7 +15,7 @@ class Array{
 		}
 	}
 	int[] removeDuplicate(int a[]){
-		  int[] temp = new int[a.length];  // temporary array for unique elements
+		int[] temp = new int[a.length];  // temporary array for unique elements
         int k = 0;                // index for temp[]
 		for(int i=0;i<a.length;i++){//10 20 10 30 30
 			boolean flag=true;
