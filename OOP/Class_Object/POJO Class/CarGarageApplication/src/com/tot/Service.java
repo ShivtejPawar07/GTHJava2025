@@ -33,7 +33,7 @@ public class Service {
     }
 
     // Calculate Total Bill of All Cars in Register
-    int getTotalBill() {
+    int getTotalBill(Customer c) {
         int total = 0;
 
         if (r == null || r.getCustomers() == null) {

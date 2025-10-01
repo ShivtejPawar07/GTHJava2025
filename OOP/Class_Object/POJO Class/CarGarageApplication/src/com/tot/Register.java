@@ -8,7 +8,7 @@ public class Register {
     private Date d;         
 
     // Setter & Getter for Customer array
-    public void setCustomers(Customer[] c) {
+    public void addCustomers(Customer[] c) {
         this.c = c;
     }
     public Customer[] getCustomers() {

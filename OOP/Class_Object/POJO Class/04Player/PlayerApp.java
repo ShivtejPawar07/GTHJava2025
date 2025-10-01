@@ -1,5 +1,5 @@
-package com.tot;
-
+import com.tot.Player;
+import com.tot.PlayerOper;
 public class PlayerApp {
     public static void main(String[] args) {
         Player[] p = new Player[5];
@@ -14,5 +14,6 @@ public class PlayerApp {
         po.avg();
         po.bestAverage();
         po.aboveTeamAverage();
+		
     }
 }

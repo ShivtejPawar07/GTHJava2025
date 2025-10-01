@@ -1,0 +1,23 @@
+/*2. Write a program to input numbers using Scanner class and reverse it?
+*/
+import java.util.*;
+class Reverse{
+	public static int reverse(int n){
+		int rev=0;
+		while(n!=0){
+			rev=rev*10+(n%10);
+			n/=10;
+		}
+		return rev;
+	}
+}
+class ReverseApp{
+	public static void main(String x[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number");
+		int n=sc.nextInt();
+		
+		int rev=Reverse.reverse(n);
+		System.out.println("Reverse="+rev);
+	}
+}

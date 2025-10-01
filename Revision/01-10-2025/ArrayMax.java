@@ -1,0 +1,28 @@
+/*10. Write a program to create an array of size 5 and display its value?
+*/
+import java.util.*;
+class ArrayMax{
+	public static void main(String x[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many num in array");
+		int n=sc.nextInt();
+		int[] a=new int[n];
+		
+		System.out.println("ENter AN Array Element");
+		for(int i=0;i<n;i++)
+			a[i]=sc.nextInt();
+		
+		System.out.println("Display an array elemnt");
+		for(int i=0;i<n;i++)
+			System.out.print(a[i]+" ");
+		
+		int max=Integer.MIN_VALUE;
+		for(int i=0;i<n;i++){
+			if(a[i]>max){
+				max=a[i];
+			}
+			
+		}
+		System.out.println("MAX="+max);
+	}
+}

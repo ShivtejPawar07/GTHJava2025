@@ -1,46 +1,43 @@
 package com.tot;
-import java.util.Date;
 
 public class MainApp {
     public static void main(String[] args) {
-        // Create ServiceHistory
-        ServiceHistory s1 = new ServiceHistory();
-        s1.setPart("Clutch Repair");
-        s1.setPrice(3000);
 
-        ServiceHistory s2 = new ServiceHistory();
-        s2.setPart("Oil Change");
-        s2.setPrice(1500);
+        // 1. Create a Customer object
+        Customer c = new Customer();
+        c.setName("Shivtej");
+        c.setEmail("shivtej@07");   
+        c.setContact("7757949545");
 
-        ServiceHistory[] shArr = {s1, s2};
+        // 2. Create a Car object
+        Car car = new Car();     
+        car.setId(1);             
+        car.setName("Honda City"); 
+        car.setComp("Honda"); 
+        car.setStatus(false);    
 
-        // Create Car
-        Car car = new Car();
-        car.setId(201);
-        car.setName("Aventador");  
-        car.setComp("Lamborghini"); 
-        car.setStatus(true);
-        car.setServiceHistory(shArr);
+        car.setServiceHistory(new ServiceHistory[10]);
 
-        // Create Customer
-        Customer cust1 = new Customer();
-        cust1.setName("Shivtej Pawar");
-        cust1.setEmail("shivtejpawar8@gmail.com");
-        cust1.setContact("7757949545");
-        cust1.setCar(car);
 
-        // Put Customer in Register
-        Customer[] custArr = {cust1};
-        Register reg = new Register();
-        reg.setCustomers(custArr);
-        reg.setDate(new Date());
+        c.setCar(car);
 
-        // Create Service
-        Service service = new Service();
-        service.acceptVehicle(reg);
-        service.serviceCar();
+       
+        Register.addCustomers(c);   
 
-        // Print Total Bill
-        System.out.println("\nTotal Bill: " + service.getTotalBill());
+       
+        Service.acceptVehicle(c);  
+
+       
+        Service.serviceCar(c);     
+
+       
+        System.out.println("Car Status: " + car.getStatus());
+
+       
+        System.out.println("Service History: " + car.getServiceHistory());
+
+       
+        double totalBill = Service.getTotalBill(c);
+        System.out.println("Total Bill: " + totalBill);
     }
 }

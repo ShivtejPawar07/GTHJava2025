@@ -6,9 +6,24 @@ public class ProductApp {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		Product[]s=new Product[3];
+		Product[] p = new Product[10];
+
+		p[0] = new Product(1, "Laptop", "Electronics", 45000, 5);
+		p[1] = new Product(2, "Phone", "Electronics", 25000, 10);
+		p[2] = new Product(3, "Shirt", "Clothing", 1200, 20);
+		p[3] = new Product(4, "Shoes", "Footwear", 2500, 15);
+		p[4] = new Product(5, "Bag", "Accessories", 1800, 8);
+		p[5] = new Product(6, "Watch", "Accessories", 5000, 12);
+		p[6] = new Product(7, "Tablet", "Electronics", 15000, 7);
+		p[7] = new Product(8, "Jeans", "Clothing", 1800, 18);
+		p[8] = new Product(9, "Headphones", "Electronics", 3500, 9);
+		p[9] = new Product(10, "Jacket", "Clothing", 3000, 6);
+
+	//	Product[]s=new Product[3];
+		
+		
 		Company co=new Company();
-		co.accept(s);
+		co.accept(p);
 		int ch=0;
 		do {
 			System.out.println("1. Add Product Details.");
@@ -41,19 +56,19 @@ public class ProductApp {
 				case 3:co.searchProduct();
 					break;
 					
-				case 4:
+				case 4:co.productDelete();
 					break;
 					
-				case 5:
+				case 5:co.productUpdate();
 					break;
 					
-				case 6:
+				case 6:co.sortProduct();
 					break;
 					
-				case 7:
+				case 7:co.expProduct();
 					break;
 					
-				case 8:
+				case 8:co.rangeProduct();
 					break;
 					
 				case 9:System.out.println("Exit.....!");
