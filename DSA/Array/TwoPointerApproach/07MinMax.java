@@ -1,6 +1,5 @@
 /*7.Find the maximum and minimum elements in an array using two pointers.*/
 import java.util.*;
-
 class Sum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
