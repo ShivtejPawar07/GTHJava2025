@@ -54,10 +54,12 @@ class MergeSorted {
 			k++;
 			j++;
         }
-
+		
         System.out.println("Merged array:");
          for (i=0; i<c.length; i++) {
+			 if(c[i]>0){
             System.out.print(c[i] + " ");
+			 }
         }
     }
 }

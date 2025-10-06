@@ -20,7 +20,6 @@ class Array {
                     break; // stop at the first negative
                 }
             }
-
             if (!flag) {
                 System.out.println("First negative in window " + (i + 1) + " : Not found");
             }
