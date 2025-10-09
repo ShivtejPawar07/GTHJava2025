@@ -30,5 +30,4 @@ class Happy{
 		String result= n==1?"Happy":"Not";
 		System.out.println(result);
 	}
-	
 }

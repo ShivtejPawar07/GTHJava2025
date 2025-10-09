@@ -3,7 +3,7 @@
                    1  4  9  16  25  36  49  64  81  100*/
 import java.util.*;
 class Sq{
-	public static void main(String x[]){
+/*public static void main(String x[]){
 		Scanner sc=new Scanner(System.in);
 		
 		
@@ -11,7 +11,19 @@ class Sq{
 		while(i<=10){
 		System.out.print(i*i+" ");
 		i++;
-		}
+		}*/
 	
+	static void square(int i,int l){
+		if(i==10)
+			return;
+		System.out.print(i*i +" ");
+		
+		square(i+1,l);
+		
+		
 	}
+	public static void main(String x[]){
+		square(0,10);
+	}
+	
 }	

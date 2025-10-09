@@ -7,9 +7,9 @@ class LongestSubarray {
         int a[] = {1, 2, 1, 0, 1, 1, 0};
         int K = 4;  // sum limit
 
-        int i = 0;     // start of window
-        int sum = 0;
-        int maxLen = 0;
+        int i=0;     // start of window
+        int sum=0;
+        int maxLen=0;
 
         for (int j = 0; j < a.length; j++) { // j = end of window
             sum += a[j];  // expand window by adding a[j]
@@ -32,6 +32,31 @@ class LongestSubarray {
         System.out.println("Longest Subarray Length = " + maxLen);
     }
 }
+/*
+class MaxLen{
+	public static int maxLen(int[]a,int k){
+		int i=0,sum=0,max=0;
+		for(int j=0;j<a.length;j++){
+			sum+=a[j];
+			while(sum>k){
+				sum-=a[i];
+				i++;
+			}
+			int wl=j-i+1;
+			if(wl>max){
+				max=wl;
+			}
+		}
+		return max;
+	}
+	public static void main(String x[]){
+		int[]a={1,2,1,0,1,1,0};
+		int k=4;
+		System.out.println("Max="+maxLen(a,k));
+	}
+	
+}
+*/
 /*
 Problem
 

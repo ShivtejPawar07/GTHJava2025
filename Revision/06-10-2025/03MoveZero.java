@@ -21,18 +21,18 @@ class MoveZero{
 		
 		int i=0,j=0;
 		
-		while(i<n){
+		for(;i<n;i++){
 			if(a[i]!=0){
 				a[j]=a[i];
 				j++;
-			}
-			i++;
+			}		
 		}
+		
 		while(j<n){
 			a[j]=0;
 			j++;
 		}
-		 System.out.println("Enter array elements of array a:");
+		System.out.println("Enter array elements of array a:");
 		for(int val:a){
 			 System.out.print(val+" ");
 		}

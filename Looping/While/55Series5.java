@@ -3,7 +3,7 @@
                    5  3  10  6  15  9  20  12  25  15  30  18  35  21  40*/
 import java.util.*;
 class Series1{
-	public static void main(String x[]){
+	/*public static void main(String x[]){
 		Scanner sc=new Scanner(System.in);
 		
 		
@@ -14,6 +14,18 @@ class Series1{
 	
 		}
 	 System.out.print(5 * i);
+	}*/
+	
+	static void series(int a,int b,int limit){
+		if(limit==0)
+			return;
+		System.out.print(a+" "+b+" ");
+		series(a+5,b+3,limit-1);
+		
+	}
+	public static void main(String x[]){
+		series(5,3,7);
 	}
 }
+
 

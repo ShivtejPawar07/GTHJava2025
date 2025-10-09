@@ -4,7 +4,7 @@
 	*/
 import java.util.*;
 class Series4{
-	public static void main(String x[]){
+	/*public static void main(String x[]){
 		Scanner sc=new Scanner(System.in);
 		int i=1,d=1;
 		System.out.print(i+" ");
@@ -14,5 +14,16 @@ class Series4{
 		i++;
 		}
 	
+	}*/
+	static void series(int d,int i,int l){
+		if(i>l)
+			return;
+		System.out.print(d+" ");
+		series(d=d+i,i+1,l);
 	}
+	public static void main(String x[]){
+		series(1,1,10);
+	}
+	
+	
 }	

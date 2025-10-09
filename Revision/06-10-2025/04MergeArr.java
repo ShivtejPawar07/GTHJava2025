@@ -42,17 +42,19 @@ class Merge{
 				k++;
 			}	
 		}
+		System.out.println("i"+i+"\nj"+j);
 		while(i<a.length){
 			c[k]=a[i];
 				i++;
 				k++;
 		}
+		System.out.println("i"+i+"\nj"+j);
 		while(j<b.length){
 			c[k]=b[j];
 				j++;
 				k++;
 		}
-			
+		System.out.println("i"+i+"\nj"+j);	
 		for(int val:c){
 			System.out.print(val+" ");
 		}
