@@ -198,7 +198,6 @@ class Pattern{
 					System.out.print(a++);
 					flag=false;
 				}
-				
 				else{
 					System.out.print(" ");
 					flag=true;

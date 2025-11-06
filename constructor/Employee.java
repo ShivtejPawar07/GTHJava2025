@@ -1,0 +1,38 @@
+/*Q1. Problem:
+ Create a class Employee with fields:
+empId, empName, basicSalary, hra, da, and grossSalary.
+Use a parameterized constructor to initialize empId, empName, and basicSalary.
+ HRA = 10% of basic, DA = 15% of basic, and Gross = Basic + HRA + DA.
+ Display all employee details and salary slip.
+Hint: Use constructor to calculate the salary.
+*/
+
+class Employee{
+	int id;
+	String name;
+	double bs;
+	double hra;
+	double da;
+	double gs;
+	
+	Employee(int id,String name,double bs){
+		this.id=id;
+		this.name=name;
+		this.bs=bs;
+		hra=0.10*bs;
+		da=0.15*bs;
+		gs=bs+hra+da;
+	}
+	void display(){
+		System.out.println("Id="+id);
+		System.out.println("Name="+name);
+		System.out.println("BasicSal="+bs);
+		System.out.println("HRA = 10% of basic="+hra);
+		System.out.println("DA = 15% of basic="+da);
+		System.out.println("GrossSal="+gs);
+	}
+	public static void main(String x[]){
+		Employee e=new Employee(1,"Shivtej",1000);
+		e.display();
+	}
+}

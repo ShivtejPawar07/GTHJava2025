@@ -1,5 +1,6 @@
 /*Q40. Write a java program to find all prime factors of a number.
-The prime factors of a number are all the prime numbers that, when multiplied together, result in the original number. A prime number is a whole number greater than 1 that has only two divisors: 1 and the number itself. 
+The prime factors of a number are all the prime numbers that, when multiplied together, result in the original number. 
+A prime number is a whole number greater than 1 that has only two divisors: 1 and the number itself. 
 For example:
 The prime factors of 12 are 2 and 3, because 2 x 2 x 3 = 12. 
 The prime factors of 20 are 2 and 5, because 2 x 2 x 5 = 20. 

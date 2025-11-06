@@ -1,4 +1,5 @@
-/* Q3. Write a Java program to display the following series using function recursion : 7 10 15 22 31 42 55 70
+/* Q3. Write a Java program to display the following series using function recursion :
+ 7 10 15 22 31 42 55 70
 */
 class Series{
 	public static void main(String x[]){

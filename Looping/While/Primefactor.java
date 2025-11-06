@@ -11,7 +11,7 @@ class PrimeFactorSimple {
         for (int i = 2; i <= n; i++) {
             while (n % i == 0) {   // check divisibility
                 System.out.print(i + " ");
-                n = n / i;
+                n = n / i; 
             }
         }
     }

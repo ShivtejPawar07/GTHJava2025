@@ -7,7 +7,7 @@ class MinLenSubArr {
         int a[] = {2, 3, 1, 2, 4, 3};
         int target = 7;
         int n = a.length;
-        int minLen = n + 1;
+        int minLen = Integer.MAX_VALUE;
 
         // Try every starting point
         for (int i = 0; i < n; i++) {
@@ -25,7 +25,7 @@ class MinLenSubArr {
             }
         }
 
-        if (minLen == n + 1)
+        if (minLen == Integer.MAX_VALUE)
             System.out.println("No subarray found");
         else
             System.out.println("Minimum subarray length: " + minLen);

@@ -17,7 +17,7 @@ class Series1{
 	static void series(int i,int l){
 		if(i>l)
 			return;
-		System.out.print(i+" "+i*i+" ");
+		System.out.print(i+" "+i*2+" ");
 		series(i+1,l);
 	}
 }
