@@ -62,6 +62,7 @@ public class StudentApp {
 				    break;
 
 				default:System.out.println("Invalid choice");
+				
 					break;	
 				
 					

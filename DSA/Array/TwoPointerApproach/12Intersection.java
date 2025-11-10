@@ -46,8 +46,10 @@ class Arr {
                 j++;
 
                 // Skip duplicates
-                while (i < a.length && a[i] == a[i - 1]) i++;
-                while (j < b.length && b[j] == b[j - 1]) j++;
+                while (i < a.length && a[i] == a[i - 1]) 
+					i++;
+                while (j < b.length && b[j] == b[j - 1]) 
+					j++;
             }
         }
     }
