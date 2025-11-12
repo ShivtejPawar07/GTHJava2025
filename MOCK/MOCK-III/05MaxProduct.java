@@ -24,7 +24,6 @@ class MaxProduct {
                 }
             }
         }
-
         System.out.println("Pair is (" + num1 + ", " + num2 + "), Maximum Product: " + maxProduct);
     }
 }

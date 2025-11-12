@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 class BinarySearch{
 	public static void main(String x[]){
 		Scanner sc=new Scanner(System.in);

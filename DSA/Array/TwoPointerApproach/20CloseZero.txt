@@ -1,0 +1,17 @@
+import java.util.*;
+class CloseZero{
+	public static void main(String[]x){
+		Scanner sc=new Scanner(System.in);
+		int[]a={38,44,63,-51,-35,19,84,-69,4,-46};
+		min=Integer.Max_VALUE;
+		for(int i=0;i<a.length;i++){
+			for(int j=0;j<a.length;j++){
+				if(a[i]+a[j]<min){
+					min=a[i]+a[j];
+				}
+			}
+		}
+		System.out.println(min);
+	}
+
+}

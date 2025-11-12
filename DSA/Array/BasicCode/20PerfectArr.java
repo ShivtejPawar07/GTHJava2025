@@ -21,7 +21,7 @@ class Arr{
 		    }
 			if(sum==a[i]){
 			System.out.print(a[i]+" ");
-		}
+			}
 		
 		}
 	}

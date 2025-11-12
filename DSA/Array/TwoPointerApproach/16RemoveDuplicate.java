@@ -15,20 +15,18 @@ class Arr{
 		}
 		Arrays.sort(a);
 		int i=0; // slow pointer
-        for (int j=1;j<a.length;j++) { // fast pointer
+        for(int j=1;j<a.length;j++) { // fast pointer
             if (a[j]!=a[i]) {  // found a new element
                 i++;
                 a[i]=a[j];
             }
         }
-
         int newLength=i+1;
-
+		
         System.out.println("Array after removing duplicates:");
-        for (int k=0; k<newLength;k++) {
+        for(int k=0; k<newLength;k++) {
             System.out.print(a[k] + " ");
         }
-
         System.out.println("\nNew Length = " + newLength);
 	}
 }

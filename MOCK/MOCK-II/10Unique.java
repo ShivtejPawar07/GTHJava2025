@@ -14,7 +14,7 @@ class Arr{
 		for(int i=0;i<a.length;i++){
 			a[i]=sc.nextInt();
 		}
-		 boolean flag = false;
+		boolean flag = false;
 			for(int i=0;i<a.length;i++){
 				for(int j=i+1;j<a.length;j++){
 					for(int k=j+1;k<a.length;k++){
