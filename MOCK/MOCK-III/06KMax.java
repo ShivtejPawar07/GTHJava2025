@@ -14,8 +14,7 @@ class KthHighest {
         // kth highest = element at length - k
         int kthHighest = arr[arr.length - k];
         
-        System.out.println(k + "th highest value = " + kthHighest);
-        
+        System.out.println(k + "th highest value = " + kthHighest); 
         sc.close();
     }
 }

@@ -19,5 +19,6 @@ class Series1{
 			return;
 		System.out.print(i+" "+i*2+" ");
 		series(i+1,l);
+		
 	}
 }

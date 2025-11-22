@@ -87,6 +87,21 @@ Mixed pyramid
 			}
 			System.out.println();
 		}
+		
+		for(int i=1;i<=7;i++)
+		{
+			int n=(i<=4)? i:8-i;
+			int count=n;
+			for(int j=1;j<=count;j++)
+			{
+				System.out.print(n);
+				if(j!=count){
+					System.out.print(" * ");
+				}
+				
+			}
+			System.out.print("\n");
+		}
 /*
 Mixed Pattern
 1
@@ -247,10 +262,8 @@ Pascale Triangle
 						             3;
 			for(int j=1;j<=repeat;j++){
 					System.out.print("#"+i);
-			 }
+			}
 			 System.out.println();
 		}
-		
-		
 	}
 }

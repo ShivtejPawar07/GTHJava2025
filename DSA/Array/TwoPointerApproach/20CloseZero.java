@@ -1,3 +1,8 @@
+/*Q2. Write a program in java to find two elements whose sum is closest to zero
+
+Expected Output:
+
+The given array is 38 44 63-51-35 19 84-694-46 The Pair of elements whose sum is minimum are: [44, -46]*/
 import java.util.*;
 class CloseZero{
 	public static void main(String[]x){

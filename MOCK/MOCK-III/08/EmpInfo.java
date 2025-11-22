@@ -5,8 +5,7 @@ public class EmpInfo{
 	public void accept(Employee... e){
 		this.e=e;
 	}
-	public void calculateBonus(){
-		
+	public void calculateBonus(){	
 		for(int i=0;i<e.length;i++){
 			if(e[i].getSalary() >= 100000)
 				bonus = e[i].getSalary()*0.15;
@@ -26,5 +25,5 @@ public class EmpInfo{
 
 	} 
 
-}
+	}
 }
