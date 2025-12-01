@@ -17,6 +17,9 @@ Example 2:
 
 Input: n = 25
 Output: 1389537
+
+0, 1, 1, 2, 4, 7, 13, 24, 44, ...
+
  */
 class Solution {
     public int tribonacci(int n) {
