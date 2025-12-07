@@ -11,18 +11,17 @@ public class MADD
 		   {   a[i][j]=xyz.nextInt();
 		   }
 	   }
-	   System.out.println("\nDisplay matrix");
-	   for(int i=0; i<a.length; i++)
-	   {
+		System.out.println("\nDisplay matrix");
+		for(int i=0; i<a.length; i++)
+		{
 	       for(int j=0; j<a[i].length; j++)
 		   {
 		       System.out.printf("%d\t",a[i][j]);
 		   }
 		   System.out.printf("\n");
-	   }
-	   for(int i=0; i<a.length; i++)
-	   {     int cols[]=new int[3];
-		         
+		}
+		for(int i=0; i<a.length; i++)
+		{     int cols[]=new int[3];   
 	       for(int j=0; j<a[i].length;j++)
 		   {      
 		          cols[j]=a[j][i];
@@ -31,10 +30,10 @@ public class MADD
 		   for(int k=0;k<a[i].length; k++)
 		   {  a[k][i]=cols[k];
 		   }
-	   }
-	   System.out.println("\nDisplay matrix");
-	   for(int i=0; i<a.length; i++)
-	   {
+	    }
+		System.out.println("\nDisplay matrix");
+		for(int i=0; i<a.length; i++)
+		{
 	       for(int j=0; j<a[i].length; j++)
 		   {
 		       System.out.printf("%d\t",a[i][j]);
