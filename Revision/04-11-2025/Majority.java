@@ -15,13 +15,11 @@ class Majority{
 				if(a[i]==a[j]){
 					cnt++;
 				}
-			}
-			
-		
-		if(cnt>a.length/2){
-			maj=a[i];
-			break;
-		}
+			}	
+				if(cnt>a.length/2){
+					maj=a[i];
+					break;
+				}
 		}
 		if(maj!=0){
 			System.out.println("majority"+maj);

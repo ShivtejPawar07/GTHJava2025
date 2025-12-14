@@ -16,7 +16,7 @@ class BubbleSort
 			   for(int j=0; j<(a.length-1)-i;j++)
 			   {
 				    if(a[j]>a[j+1])
-					{     int temp=a[j];
+					{     int temp p=a[j];
 						 a[j]=a[j+1];
 						 a[j+1]=temp;
 						 flag=true;

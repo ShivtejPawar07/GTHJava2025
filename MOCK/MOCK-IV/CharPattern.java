@@ -1,3 +1,12 @@
+/*
+A             A
+A B         B A
+A B C     C B A
+A B C D D C B A
+A B C     C B A
+A B         B A
+A             A
+*/
 class Pattern{
 	public static void main(String x[]){
 		for(int i=1;i<=7;i++){

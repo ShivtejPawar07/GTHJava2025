@@ -21,7 +21,7 @@ class Duck{
 		if(flag)
 			System.out.println("Duck");
 		else
-		System.out.println("Not Duck");
+			System.out.println("Not Duck");
 		
 		
 	}

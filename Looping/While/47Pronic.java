@@ -6,23 +6,17 @@ Explanation:
  Use a loop to check for each number from 1 to n. For each, use another loop 
  to find if it can be expressed as x*(x+1).*/
  import java.util.*;
- class Pronic{
-  public static void main(String x[]){
-    Scanner sc=new Scanner(System.in);
-	System.out.println("how many a number");
-	int n=sc.nextInt();
-	
-	 int i = 1;
-        while (i <= n) {
-            int pronic=i*(i+1);
-                if (pronic<n) {
-                    System.out.print(pronic+ " ");
-                    
-                }
-                
-            
-            i++;
+
+class Pronic {
+    public static void main(String x[]) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+
+        for (int i = 1; i * (i + 1) <= n; i++) {
+           
+            System.out.print("("+i+"*"+"("+(i+1)+"))="+i * (i + 1) + " ");
         }
-  }
-  
- }
+	} 
+}

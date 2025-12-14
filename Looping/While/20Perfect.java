@@ -13,7 +13,7 @@ class Arr{
 			System.out.printf("a[%d]=%d\n",i,a[i]);
 		}
 		for(int i=0;i<a.length;i++){
-			for(int j=1;j<=a.length/2;j++)
+			for(int j=1;j<=a.length/2;j++){
 				if(a[i]%j==0){
 					sum=sum+j;
 				}
@@ -22,6 +22,6 @@ class Arr{
 		if(a[i]==sum){
 			System.out.print(a[i]+" ");
 			
-		
+		}
 	}
 }

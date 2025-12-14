@@ -33,3 +33,49 @@ class Majority {
         }
     }
 }
+/*
+import java.util.*;
+
+class Majority {
+    public static void main(String x[]) {
+        int[] a = {2, 3, -4, -1, 6, -9};
+
+        ArrayList<Integer> posList = new ArrayList<>();
+        ArrayList<Integer> negList = new ArrayList<>();
+
+        // Separate positive and negative numbers
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] >= 0)
+                posList.add(a[i]);
+            else
+                negList.add(a[i]);
+        }
+
+        // Print positives
+        System.out.print("Separate positives: ");
+        System.out.println(posList);
+
+        // Print negatives
+        System.out.print("Separate negatives: ");
+        System.out.println(negList);
+
+        // Rearrange alternate
+        System.out.print("Rearranged array: ");
+        int i = 0, j = 0;
+
+        while (i < posList.size() || j < negList.size()) {
+
+            if (i < posList.size()) {
+                System.out.print(posList.get(i) + " ");
+                i++;
+            }
+
+            if (j < negList.size()) {
+                System.out.print(negList.get(j) + " ");
+                j++;
+            }
+        }
+    }
+}
+
+*/

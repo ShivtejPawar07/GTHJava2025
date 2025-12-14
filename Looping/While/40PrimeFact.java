@@ -12,7 +12,7 @@ class PFact{
     Scanner sc=new Scanner(System.in);
 	System.out.println("Enter a Number");
 	int n=sc.nextInt();
-	int i=2;
+	/*int i=2;
 	while(n>=2){
 		if(n%i==0){
 			System.out.println(i);
@@ -22,5 +22,7 @@ class PFact{
 			i++;
 		}
   }
+  */
+
 }
 }

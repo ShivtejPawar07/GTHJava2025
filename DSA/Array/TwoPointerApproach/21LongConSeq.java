@@ -9,7 +9,8 @@ import java.util.*;
 
 class LongConSeq {
     public static void main(String[] args) {
-        int[] a = {49, 1, 3, 200, 2, 4, 70, 5};
+     //   int[] a = {49, 1, 3, 200, 2, 4, 70, 5};
+        int[] a = {1,2,5,6,7,9,10,55,22,23,24,25};
 
         // Step 1: Sort the array
         Arrays.sort(a);

@@ -1,32 +1,20 @@
+/*Q2. Write a program in java to find two elements whose sum is closest to zero
+
+Expected Output:
+
+The given array is 38 44 63-51-35 19 84-694-46 The Pair of elements whose sum is minimum are: [44, -46]*/
 import java.util.*;
-class Merge{
-	public static void main(String x[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter how many elements in array 1:");
-		int n=sc.nextInt();
-		int a[]=new int[n];
-		
-		System.out.println("enter array elements of array a:");
-		for(int i=0;i<a.length;i++)
-			a[i]=sc.nextInt();
-		
-		System.out.println("Dispaly array elements of array a:");
-		for(int i=0;i<a.length;i++)
-			System.out.print(a[i]+" ");
-			
-	 //1 2 3 4 5=3 4 5 1 2
-		System.out.println("\nHow many elemnt rotate");
-		int k=sc.nextInt();
-		while(k!=0){
-			int temp=a[n-1];
-			for(int i=n-1;i>0;i--){
-				a[i]=a[i-1];
-			}
-			a[0]=temp;
-			k--;
+class Demo{
+	public static void main(String[]x){
+		 int[] a = {49, 1, 3, 200, 2, 4, 70, 5};
+
+        // Step 1: Sort the array
+        Arrays.sort(a);
+		int cnt=1;
+		for(int i=1;i<a.length;i++){
+			if(a[i]==a[i-1]+1)
+				cnt++;
 		}
-		System.out.println("Dispaly array elements of array a:");
-		for(int i=0;i<a.length;i++)
-			System.out.print(a[i]+" ");
+		return cnt;
 	}
 }

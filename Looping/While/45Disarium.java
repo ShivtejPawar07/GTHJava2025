@@ -80,7 +80,6 @@ class Disarum{
 			
 			temp/=10;
 			pos--;
-			
 		}
 	 if(sum==n)
 		 System.out.print(n+" ");

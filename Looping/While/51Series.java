@@ -3,7 +3,7 @@
                    1  2  2  4  3  6  4  8  5  10  6  12*/
 				   
 import java.util.*;
-class Series1{
+class Series{
 	public static void main(String x[]){
 		/*Scanner sc=new Scanner(System.in);
 		int i=1;
@@ -12,13 +12,13 @@ class Series1{
 		i++;
 		} */
 		series(1,6);
-	
 	}
 	static void series(int i,int l){
-		if(i>l)
+		if(l==0)
 			return;
+		
 		System.out.print(i+" "+i*2+" ");
-		series(i+1,l);
+		series(i+1,l-1);
 		
 	}
 }
