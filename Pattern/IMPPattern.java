@@ -173,18 +173,19 @@ CBABC
 DCBABCD
 EDCBABCDE*/
 		
-		for(int i=1;i<=5;i++){
-			for(int j=1,aa=65;j<=9;j++){
-				
-				if(j<=i*2-1){
-					if(j<5)
-				       System.out.print((char)aa++);
-				    else
-						System.out.print((char)--aa);
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1, aa = 65 + i - 1; j <= 9; j++) {
+
+				if (j <= i * 2 - 1) {
+					if (j <= i)
+						System.out.print((char) aa++);
+					else
+						System.out.print((char) aa--);
 				}
 			}
 			System.out.println();
 		}
+
 		
 	}
  }

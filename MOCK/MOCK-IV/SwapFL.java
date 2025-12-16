@@ -25,7 +25,7 @@ class SwapDigits {
 		}
 		int last2=n%((int)Math.pow(10,2));
 		int first2=(n/((int)Math.pow(10,cnt-2)));
-		int middle=n/(int)Math.pow(10,2)
+		int middle=n/(int)Math.pow(10,2);
 		
     }
 }

@@ -239,7 +239,7 @@ Pascale Triangle
 		for(int i=1;i<=5;i++){
 			for(int j=1,a=1;j<=9;j++){
 				if(j<=i*2-1 && j%2!=0){
-				System.out.print(a++);
+					System.out.print(a++);
 				}
 				else if(j<=i*2-1 && j%2==0){
 					System.out.print("*"); 

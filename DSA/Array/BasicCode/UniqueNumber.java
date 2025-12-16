@@ -17,7 +17,7 @@ class UniqueNumber {
         System.out.print("All unique elements in the array are: ");
 
         // Find unique numbers
-        for (int i = 0; i < arr.length; i++) {
+       /* for (int i = 0; i < arr.length; i++) {
             int count = 0;
             for (int j = 0; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
@@ -28,5 +28,6 @@ class UniqueNumber {
                 System.out.print(arr[i] + " ");
             }
         }
+ */
     }
 }
