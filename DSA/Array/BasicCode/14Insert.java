@@ -32,3 +32,33 @@ class Demo{
 		}
 	}
 }
+/*class InsertArray {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40};
+        int pos = 2;      // index
+        int value = 99;
+
+        int[] newArr = new int[arr.length + 1];
+
+        // copy elements before position
+        for (int i = 0; i < pos; i++) {
+            newArr[i] = arr[i];
+        }
+
+        // insert element
+        newArr[pos] = value;
+
+        // copy remaining elements
+        for (int i = pos; i < arr.length; i++) {
+            newArr[i + 1] = arr[i];
+        }
+
+        // print array
+        for (int x : newArr) {
+            System.out.print(x + " ");
+        }
+    }
+}
+
+*/

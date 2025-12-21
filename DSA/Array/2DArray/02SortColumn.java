@@ -4,13 +4,14 @@ import java.util.*;
 public class MADD
 {   public static void main(String x[])
 	{  int a[][]=new int[3][3];
-	     Scanner xyz = new Scanner(System.in);
-	   System.out.println("Enter values in first matrix ");
-	   for(int i=0; i<a.length; i++)
-	   {   for(int j=0; j<a[i].length; j++)
-		   {   a[i][j]=xyz.nextInt();
-		   }
-	   }
+	    Scanner xyz = new Scanner(System.in);
+		System.out.println("Enter values in first matrix ");
+		for(int i=0; i<a.length; i++)
+		{   
+			for(int j=0; j<a[i].length; j++)
+			{   a[i][j]=xyz.nextInt();
+			}
+	    }
 		System.out.println("\nDisplay matrix");
 		for(int i=0; i<a.length; i++)
 		{

@@ -15,6 +15,7 @@ class ArrOcc{
 		}
 		System.out.println("\nElement" + "\t\t" +"count");
 		boolean visited[]=new boolean[n];
+		int max=0;
 		for(int i=0;i<n;i++){
 			if(visited[i]==true){
 				continue;
@@ -27,6 +28,10 @@ class ArrOcc{
 				}
 			}
 			System.out.println(a[i] + "\t\t" + cnt);
+			if(cnt>max){
+				max=cnt;
+			}
 		}
+		System.out.println(max);
 	}
 }

@@ -8,7 +8,7 @@ class Series{
 		if(cnt==0)
 			return;
 		System.out.print(n+" ");
-		printSerirs(n+diff,diff+2,cnt--);
+		printSerirs(n+diff,diff+2,cnt--);            
 	
 	}
 }

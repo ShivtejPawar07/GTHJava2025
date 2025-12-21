@@ -7,10 +7,22 @@ Separate positives: [2, 3, 6]
 Separate negatives: [-4, -1, -9]
 Rearranged array: [2, -4, 3, -1, 6, -9]
 */
+
 class Majority {
     public static void main(String x[]) {
         int[] a = {2, 3, -4, -1, 6, -9};
-
+		 System.out.print("Positive array: ");
+		for(int i=0;i<a.length;i++){
+			if(a[i]>0){
+				System.out.print(a[i]+" ");
+			}
+		}
+		 System.out.print("Negative array: ");
+		for(int i=0;i<a.length;i++){
+			if(a[i]<0){
+				System.out.print(a[i]+" ");
+			}
+		}
         System.out.print("Rearranged array: ");
         int pos = 0, neg = 0;
 
