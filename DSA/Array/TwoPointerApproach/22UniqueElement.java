@@ -24,6 +24,20 @@ class UniqueElementsTwoPointer {
     }
 }
 /*
+static int unique(int[] a) {
+        int res = 0;
+        for (int val : a) {
+            res ^= val;
+        }
+        return res;
+    }
+
+    public static void main(String[] x) {
+        int[] a = {2, 3, 5, 4, 5, 3, 4};
+        System.out.println("Unique Element = " + unique(a));
+    }
+*/
+/*
 🧠 Example
 
 Sorted array:

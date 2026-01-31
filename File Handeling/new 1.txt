@@ -1,0 +1,10 @@
+import java.io;
+class DLAApp{
+	public static void main(String[]x){
+		File f=new File("D:\New folder");
+		File list[]=f.listFiles();
+		for(File f1:list){
+			System.out.println(f);
+		}
+	}
+}
