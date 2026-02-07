@@ -1,4 +1,4 @@
- import java.util.*;
+import java.util.*;
 class MyStack
 {   private int a[]=new int[5];
     int top=-1;
