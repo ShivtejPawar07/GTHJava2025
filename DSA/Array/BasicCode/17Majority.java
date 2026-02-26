@@ -1,4 +1,4 @@
-/*Q17.  Write a java program to check majority element of array.
+	/*Q17.  Write a java program to check majority element of array.
  The majority element of an array is defined as an element that 
  appears more than \(N/2\) times, where \(N\) is the total number
  of elements in the array. This means its frequency in the array 

@@ -219,6 +219,7 @@ ABCDC
 ABCDEDC
 ABCDEFEDC
 */
+
 		for(int i=1;i<=5;i++){
 			for(int j=1,vv=65;j<=9;j++){
 				if(j<=i*2-1){

@@ -3,7 +3,7 @@ class Pattern3{
 		/*
 Solid Rectangle
 *****
-*****
+*****	
 *****
 		*/
 		System.out.println("Solid Rectangle");
